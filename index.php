@@ -81,11 +81,11 @@
 				<input type="number" name="x1" step="10" value="<?php echo $savedx1; ?>"/>
 				
 				<label for="x2">2 liczba</label>
-				<?php if($data) $savedx2= $_GET['x2']; else $savedx2 = 10;?>
+				<?php if($data) $savedx2= $_GET['x2']; else $savedx2 = 20;?>
 				<input type="number" name="x2" step="10" value="<?php echo $savedx2; ?>"/>
 				
 				<label for="x3">3 liczba</label>
-				<?php if($data) $savedx3= $_GET['x3']; else $savedx3 = 10;?>
+				<?php if($data) $savedx3= $_GET['x3']; else $savedx3 = 30;?>
 				<input type="number" name="x3" step="10" value="<?php echo $savedx3; ?>"/>
 				<button type="submit">Oblicz!</button>
 			</form>
