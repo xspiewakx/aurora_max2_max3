@@ -74,7 +74,7 @@
 		</div>
 		<?php } ?>
 		
-		<div class="cont" style="margin-top: 0px !important">
+		<div class="cont" style="margin-top: 50px !important">
 			<form method="get" name="addplace_form" action="#">
 				<label for="x1">1 liczba</label>
 				<?php if($data) $savedx1= $_GET['x1']; else $savedx1 = 10;?>
