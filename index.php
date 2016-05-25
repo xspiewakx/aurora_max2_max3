@@ -1,6 +1,6 @@
 ﻿<?php 
 	$data = false;
-	if (!empty($_GET)){	
+	if (!empty($_GET) && isset($_GET['x1']) && isset($_GET['x2']) && isset($_GET['x3'])){	
 		$data = true;	
 		
 		class numbers {
@@ -18,18 +18,16 @@
 			}
 			
 			function __construct(){
-				if(isset($_GET['x1']) && isset($_GET['x2']) && isset($_GET['x3'])){
-					$arr[0] = (int) $_GET['x1'];
-					$arr[1] = (int) $_GET['x2'];
-					$arr[2] = (int) $_GET['x3'];
-					$this->max2_result = $this->max2($arr[0], $arr[1]);
-					$this->max3_result = $this->max3($arr[0], $arr[1], $arr[2]);
-				}
+				$arr[0] = (int) $_GET['x1'];
+				$arr[1] = (int) $_GET['x2'];
+				$arr[2] = (int) $_GET['x3'];
+				$this->max2_result = $this->max2($arr[0], $arr[1]);
+				$this->max3_result = $this->max3($arr[0], $arr[1], $arr[2]);
 			}
 		}
 		
 		$numbers = new numbers();
-	} else
+	}
 ?>
 <!DOCTYPE html>
 <html>
